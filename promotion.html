@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDWZ5YCL7N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-NDWZ5YCL7N');
+    </script>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="SemiColonWeb">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Exclusive Monika Restaurant promotion — download our special recipe and watch our cooking playlist on YouTube.">
+    <title>Special Promotion | Monika Restaurant Deptford</title>
+
+    <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,900;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="one-page/css/et-line.css">
+
+    <!-- Plugins/Components CSS -->
+    <link rel="stylesheet" href="css/swiper.css">
+
+    <!-- Niche Demos -->
+    <link media="all" type="text/css" rel="stylesheet" href="https://venuetours.co.uk/css/widget/widget_out.css">
+    <link rel="stylesheet" href="demos/restaurant/restaurant.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        /* ── Promotion Page Styles ── */
+        :root {
+            --promo-accent: #A0522D;
+            --promo-accent-hover: #8B4513;
+            --promo-gold: #C9A96E;
+            --promo-bg-warm: #FBF7F2;
+            --promo-bg-dark: #1A1408;
+        }
+
+        /* Hero */
+        .promo-hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(160deg, var(--promo-bg-dark) 0%, #2C1E0E 100%);
+        }
+
+        .promo-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('images/gallery/9.jpg') center center / cover no-repeat;
+            opacity: 0.25;
+        }
+
+        .promo-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 60px 24px;
+        }
+
+        .promo-badge {
+            display: inline-block;
+            background: var(--promo-gold);
+            color: var(--promo-bg-dark);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 8px 22px;
+            border-radius: 999px;
+            margin-bottom: 28px;
+        }
+
+        .promo-hero h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: clamp(32px, 6vw, 56px);
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        .promo-hero p {
+            color: rgba(255, 255, 255, .75);
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        /* Decorative divider */
+        .promo-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--promo-gold);
+            margin: 40px auto;
+            border-radius: 999px;
+        }
+
+        /* Section shared */
+        .promo-section {
+            padding: 80px 0;
+        }
+
+        .promo-section-dark {
+            background: var(--promo-bg-dark);
+            color: #fff;
+        }
+
+        .promo-section-warm {
+            background: var(--promo-bg-warm);
+        }
+
+        .promo-section-label {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--promo-gold);
+            margin-bottom: 10px;
+        }
+
+        .promo-section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(28px, 4vw, 44px);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .promo-section-dark .promo-section-title {
+            color: #fff;
+        }
+
+        /* Recipe Card */
+        .recipe-card {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+        }
+
+        .recipe-card-img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+        }
+
+        .recipe-card-body {
+            padding: 36px 32px 40px;
+        }
+
+        .recipe-card-body h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .recipe-card-body .recipe-tag {
+            display: inline-block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--promo-accent);
+            margin-bottom: 16px;
+        }
+
+        .recipe-card-body p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Ingredients / Steps lists */
+        .recipe-detail-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+            color: var(--promo-accent);
+        }
+
+        .recipe-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+        }
+
+        .recipe-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .06);
+            font-size: 15px;
+            color: #444;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .recipe-list li::before {
+            content: '•';
+            color: var(--promo-gold);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .recipe-steps {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            counter-reset: step-counter;
+        }
+
+        .recipe-steps li {
+            counter-increment: step-counter;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, .06);
+            font-size: 15px;
+            color: #444;
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .recipe-steps li::before {
+            content: counter(step-counter);
+            background: var(--promo-accent);
+            color: #fff;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Download button */
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--promo-accent);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 14px 32px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: background .25s ease, transform .25s ease;
+        }
+
+        .btn-download:hover {
+            background: var(--promo-accent-hover);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-download i {
+            font-size: 18px;
+        }
+
+        /* YouTube section */
+        .yt-embed-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .35);
+        }
+
+        .yt-embed-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* YouTube placeholder (until real link is provided) */
+        .yt-placeholder {
+            background: #222;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+
+        .yt-placeholder-inner {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, .6);
+        }
+
+        .yt-placeholder-inner i {
+            font-size: 64px;
+            margin-bottom: 16px;
+            color: #FF0000;
+        }
+
+        .yt-placeholder-inner span {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* CTA banner */
+        .promo-cta-banner {
+            background: linear-gradient(135deg, var(--promo-accent) 0%, var(--promo-accent-hover) 100%);
+            padding: 60px 24px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .promo-cta-banner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(26px, 4vw, 40px);
+            margin-bottom: 10px;
+        }
+
+        .promo-cta-banner p {
+            font-size: 16px;
+            opacity: .85;
+            max-width: 500px;
+            margin: 0 auto 28px;
+        }
+
+        .btn-cta-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            color: var(--promo-accent-hover);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 14px 36px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .btn-cta-light:hover {
+            color: var(--promo-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .2);
+        }
+
+        /* Fade-in animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="stretched sticky-footer page-transition">
+
+    <!-- Document Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="transparent-header" data-sticky-shrink="false">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row justify-content-lg-between">
+
+                        <!-- Logo -->
+                        <div id="logo" class="col-auto me-lg-0 order-lg-2">
+                            <a href="index.html">
+                                <img class="logo-default" srcset="images/logo.png, images/logo.png 2x"
+                                    src="images/logo.png" alt="Monika Restaurant Logo">
+                            </a>
+                        </div><!-- #logo end -->
+
+                        <div class="primary-menu-trigger">
+                            <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+                            </button>
+                        </div>
+
+                        <!-- Primary Navigation -->
+                        <nav class="primary-menu col-lg-4 order-lg-1">
+                            <ul class="menu-container">
+                                <li class="menu-item"><a class="menu-link" href="index.html">
+                                        <div>Home</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="menu.html">
+                                        <div>Menu</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="venue.html">
+                                        <div>Venue</div>
+                                    </a></li>
+                            </ul>
+                        </nav>
+
+                        <nav class="primary-menu col-lg-4 order-lg-3">
+                            <ul class="menu-container justify-content-lg-end">
+                                <li class="menu-item"><a class="menu-link" href="story.html">
+                                        <div>Our Story</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="gallery.html">
+                                        <div>Gallery</div>
+                                    </a></li>
+                                <li class="menu-item"><a class="menu-link" href="promotion.html" style="color:#C9A96E">
+                                        <div>🎁 Promotion</div>
+                                    </a></li>
+                                <li class="menu-item">
+                                    <a class="menu-link"
+                                        href="https://web.dojo.app/create_booking/vendor/4w3KsIvZJOhkRjvfcYFI9-mNbTqGcKHCCwTTtEr_NhM_restaurant">
+                                        <div>Reserve Now</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav><!-- #primary-menu end -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header><!-- #header end -->
+
+        <!-- Content -->
+        <section id="content">
+
+            <!-- ════════════════════════════════════════════════════ -->
+            <!--  HERO                                               -->
+            <!-- ════════════════════════════════════════════════════ -->
+            <section class="promo-hero">
+                <div class="promo-hero-content fade-up">
+                    <div class="promo-badge">🎉 Limited-Time Promotion</div>
+                    <h1>A Taste of Monika,<br>Straight to Your Kitchen</h1>
+                    <p>We're sharing one of our signature recipes — exclusively for you. Download it, cook along with
+                        our YouTube playlist, and bring the Monika experience home.</p>
+                </div>
+            </section>
+
+            <!-- ════════════════════════════════════════════════════ -->
+            <!--  RECIPE SECTION                                     -->
+            <!-- ════════════════════════════════════════════════════ -->
+            <section class="promo-section promo-section-warm">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+
+                        <!-- Recipe Card -->
+                        <div class="col-lg-6 fade-up">
+                            <div class="recipe-card">
+                                <img src="images/sectionFood/BarBeachGrill-Prawns.jpg" alt="Monika Signature Recipe"
+                                    class="recipe-card-img">
+                                <div class="recipe-card-body">
+                                    <span class="recipe-tag">Exclusive Recipe</span>
+                                    <h3>Monika Spiced Grilled Prawns</h3>
+                                    <p>
+                                        A house favourite — succulent king prawns marinated in our signature West
+                                        African
+                                        spice blend, chargrilled to smoky perfection and finished with a zesty Monika
+                                        sauce.
+                                    </p>
+                                    <a href="downloads/monika-recipe.pdf" download class="btn-download mt-3">
+                                        <i class="bi-download"></i>
+                                        <span>Download Recipe (PDF)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ingredients & Steps -->
+                        <div class="col-lg-6 fade-up">
+                            <div class="promo-section-label">What You'll Need</div>
+                            <h4 class="recipe-detail-title" style="color: #222;">Ingredients</h4>
+                            <ul class="recipe-list">
+                                <li>500g raw king prawns, shell-on</li>
+                                <li>2 tbsp Monika spice blend (paprika, cayenne, garlic powder, onion powder, dried
+                                    thyme)</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>1 scotch bonnet pepper, finely diced</li>
+                                <li>Juice of 2 limes</li>
+                                <li>3 tbsp olive oil</li>
+                                <li>Salt and freshly ground black pepper to taste</li>
+                                <li>Fresh coriander and lime wedges, for serving</li>
+                            </ul>
+
+                            <h4 class="recipe-detail-title" style="color: #222;">Method</h4>
+                            <ol class="recipe-steps">
+                                <li>Combine the spice blend, garlic, scotch bonnet, lime juice, and olive oil. Toss the
+                                    prawns in the marinade, cover, and refrigerate for at least 30 minutes.</li>
+                                <li>Heat a charcoal grill or griddle pan to high heat until smoking.</li>
+                                <li>Grill the prawns for 2–3 minutes per side until charred and cooked through.</li>
+                                <li>Serve immediately with fresh coriander, lime wedges, and our Monika dipping sauce.
+                                </li>
+                            </ol>
+                        </div>
+
+                    </div><!-- row -->
+                </div>
+            </section>
+
+            <!-- ════════════════════════════════════════════════════ -->
+            <!--  YOUTUBE SECTION                                    -->
+            <!-- ════════════════════════════════════════════════════ -->
+            <section class="promo-section promo-section-dark">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+
+                        <div class="col-lg-5 fade-up">
+                            <div class="promo-section-label">Watch & Cook Along</div>
+                            <h2 class="promo-section-title">Our YouTube<br>Cooking Playlist</h2>
+                            <p
+                                style="color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.8; margin-bottom: 28px;">
+                                Follow our chefs step-by-step as they bring West African classics to life.
+                                From prep to plate — watch, learn, and cook along from the comfort of your own kitchen.
+                            </p>
+                            <a href="https://www.youtube.com/playlist?list=PLACEHOLDER_PLAYLIST_ID" target="_blank"
+                                rel="noopener" class="btn-download" style="background: #FF0000;">
+                                <i class="fa-brands fa-youtube"></i>
+                                <span>Watch on YouTube</span>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-7 fade-up">
+                            <!-- ▼ Replace the placeholder below with a real embed once the playlist URL is ready ▼ -->
+                            <div class="yt-placeholder">
+                                <div class="yt-placeholder-inner">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <span>YouTube Playlist — Coming Soon</span>
+                                </div>
+                            </div>
+                            <!--
+						<div class="yt-embed-wrapper">
+							<iframe src="https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID"
+									title="Monika Cooking Playlist"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+						</div>
+						-->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ════════════════════════════════════════════════════ -->
+            <!--  CTA BANNER                                         -->
+            <!-- ════════════════════════════════════════════════════ -->
+            <div class="promo-cta-banner fade-up">
+                <h2>Ready to Taste the Real Thing?</h2>
+                <p>Nothing beats the experience in person. Reserve your table and let us take care of the rest.</p>
+                <a href="https://web.dojo.app/create_booking/vendor/4w3KsIvZJOhkRjvfcYFI9-mNbTqGcKHCCwTTtEr_NhM_restaurant"
+                    class="btn-cta-light">
+                    <span>Reserve a Table</span>
+                    <i class="uil uil-arrow-right"></i>
+                </a>
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer -->
+        <footer id="footer" class="dark"
+            style="background: url('demos/restaurant/images/footer-bg.jpg') repeat center center / cover; background-size: auto 100%; padding: 20px 0 22px">
+            <div id="copyrights" class="bg-transparent pb-4">
+                <div class="container">
+                    <div class="row justify-content-between col-mb-30">
+                        <div class="col-12 col-md-auto text-center text-md-start">
+                            <span class="font-primary">
+                                Copyrights &copy;
+                                <script>document.write(/\d{4}/.exec(Date())[0])</script>.
+                                Monika Restaurants by 805.<br>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top -->
+    <div id="gotoTop" class="bi-arrow-up"></div>
+
+    <!-- VenueTours widgets -->
+    <div class="vt_iframe_modal">
+        <div class="vt_child_iframe">
+            <iframe allow="web-share" data-src="https://venuetours.co.uk/reservation_widget/monika" class="vt_iframe"
+                id="vt_reservation_iframe" allowtransparency="true"></iframe>
+            <div class="vt_close_div"><a href="javascript:void(0)" class="vt_close">X</a></div>
+        </div>
+    </div>
+    <div class="vt_iframe_modal">
+        <div class="vt_child_iframe">
+            <iframe allow="web-share" data-src="https://venuetours.co.uk/widget/monika" class="vt_iframe"
+                id="vt_widget_iframe" allowtransparency="true"></iframe>
+            <div class="vt_close_div"><a href="javascript:void(0)" class="vt_close">X</a></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- JavaScripts -->
+    <script src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.bundle.js"></script>
+
+    <!-- Fade-in on scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var els = document.querySelectorAll('.fade-up');
+            // trigger on first paint
+            function check() {
+                els.forEach(function (el) {
+                    var rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 60) {
+                        el.classList.add('visible');
+                    }
+                });
+            }
+            check();
+            window.addEventListener('scroll', check, { passive: true });
+        });
+    </script>
+
+    <!-- Chatbot -->
+    <script src="js/chatbot.js"></script>
+</body>
+
+</html>
