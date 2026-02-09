@@ -334,13 +334,19 @@
 
         .recipe-steps li {
             counter-increment: step-counter;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid rgba(0, 0, 0, .06);
-            font-size: 15px;
+            font-size: 14px;
+            line-height: 1.7;
             color: #444;
             display: flex;
             align-items: baseline;
             gap: 12px;
+        }
+
+        .recipe-steps li strong {
+            font-weight: 600;
+            white-space: nowrap;
         }
 
         .recipe-steps li::before {
@@ -692,7 +698,8 @@
                             <div class="offer-card-icon">🎵</div>
                             <h4>Monika Curated Playlist</h4>
                             <p>Listen and vibe before, during, or after your visit with our hand-picked playlist.</p>
-                            <span class="offer-highlight">Listen Now ↓</span>
+                            <a href="#playlist" class="offer-highlight"
+                                style="text-decoration:none; color:inherit;">Listen Now ↓</a>
                         </div>
                     </div>
                     <p class="promo-tcs fade-up">T&Cs Apply.</p>
@@ -704,6 +711,10 @@
             <!-- ════════════════════════════════════════════════════ -->
             <section class="promo-section promo-section-warm">
                 <div class="container">
+                    <div class="text-center fade-up" style="margin-bottom: 48px;">
+                        <div class="promo-section-label">Exclusive</div>
+                        <h2 class="promo-section-title" style="color: #222;">Monika Recipe<br>of The Month</h2>
+                    </div>
                     <div class="row g-5 align-items-start">
 
                         <!-- LEFT COLUMN: Beef Suya Card + Instructions -->
@@ -783,7 +794,7 @@
             <!-- ════════════════════════════════════════════════════ -->
             <!--  YOUTUBE SECTION                                    -->
             <!-- ════════════════════════════════════════════════════ -->
-            <section class="promo-section promo-section-dark">
+            <section id="playlist" class="promo-section promo-section-dark">
                 <div class="container">
                     <div class="row align-items-center g-5">
 
